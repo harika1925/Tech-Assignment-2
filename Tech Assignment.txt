@@ -34,7 +34,7 @@ Use Business Rules to automate simple logic without code (e.g., make a field req
 
 
 
-2. Ensuring Scalability and Maintainability:
+ 2  1. Ensuring Scalability and Maintainability:
 
 Scalable Customization: Use solutions to package customizations, ensuring that they are portable between environments (Dev to Test to Production).
 
@@ -43,7 +43,7 @@ Maintainability: Use consistent naming conventions, reusable JavaScript librarie
 Version control for custom scripts and workflows (GitHub or Azure DevOps).
 
 
-3. Automating Lead Qualification to Opportunity Process
+2. Automating Lead Qualification to Opportunity Process
 
 Power Automate:
 
@@ -68,12 +68,12 @@ For complex logic (e.g., lead scoring or custom validation), create C# plugins. 
 
 
 
-4. Handling Complex Business Logic:
+3 1. Handling Complex Business Logic:
 
 Implement complex business logic within the Plugin and Workflow layers to ensure data integrity (e.g., ensuring that Opportunities are always assigned to the right department).
 
 
-5. Security and Data Access for Marketing and Subsidiary:
+ 2. Security and Data Access for Marketing and Subsidiary:
 
 Business Units & Security Roles: Define separate business units for each department and subsidiary. Assign security roles such that:
 
@@ -85,35 +85,35 @@ For Opportunities, Marketing should have read-only access to opportunities gener
 
 
 
-6. Migrating Data to the Cloud:
+4. Migrating Data to the Cloud:
 
 Use the Data Migration Tool or KingswaySoft to migrate data from the on-premises instance to the cloud while preserving relationships, security roles, and audit history.
 
 Data Export Service: For batch data migration, use the Data Export Service to sync on-premises data with the cloud.
 
 
-7. Migrating Email Messages and Timeline Management:
+5. Migrating Email Messages and Timeline Management:
 
 Use the Dynamics 365 Email Integration feature, along with Server-Side Synchronization, to migrate emails to the cloud.
 
 Ensure that the timeline is properly linked to Contact records and activities using the Dynamics 365 Engagement API.
 
 
-8. On-Premises API Integration:
+6. On-Premises API Integration:
 
 Use Hybrid Connections in Azure API Management to connect to on-premises APIs securely.
 
 Leverage Azure Logic Apps or Power Automate to call these APIs from the cloud.
 
 
-9. Migrating Teams-Shared Records:
+7. Migrating Teams-Shared Records:
 
 When migrating, preserve the Team Sharing by explicitly defining shared teams within the cloud instance.
 
 Ensure that security roles, teams, and ownership structures are replicated in the cloud environment.
 
 
-10. Migrating User Views and Dashboards:
+8. Migrating User Views and Dashboards:
 
 Use Solution Export/Import or Configuration Migration Tool to migrate user-created views and dashboards.
 
